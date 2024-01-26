@@ -1,4 +1,4 @@
-                        #ФУНКЦИЯ ДЛЯ ПРИВЕДЕНИЯ ТЕЛ.НОМЕРОФ В НУЖНЫЙ ФОРМАТ
+                   #ФУНКЦИЯ ДЛЯ ПРИВЕДЕНИЯ ТЕЛ.НОМЕРОФ В НУЖНЫЙ ФОРМАТ
 import re
 def normalize_phone(phone_number):                                  # СОЗДАЕМ ФУНКЦИЮ
     pattern = r"[\+\d+]"                                            # СОЗДАЕМ ПАТЕРН (ищем + и все цифры)
@@ -15,4 +15,4 @@ def normalize_phone(phone_number):                                  # СОЗДА
     normalize_phone = "".join(normalize_phone)                      # ОБЪЕДЕНЯЕМ
     return normalize_phone                                          # ВОЗВРАЩАЕМ В ФУНКЦИЮ НУЖНЫЙ ФОРМАТ ТЕЛ.НОМЕРА
 
-print(normalize_phone(" - -  0тт97-99-4345345 0-862"))
+print(normalize_phone("     0503451234"))
